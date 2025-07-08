@@ -675,7 +675,7 @@
     const sections = ['home', 'skills', 'about', 'education', 'contact'];
     function highlightNav() {
       let scrollPos = window.scrollY + 120;
-      let activeSection = null;
+      let activeSection = false;
       sections.forEach(id => {
         const sec = document.getElementById(id);
         if (sec && sec.offsetTop <= scrollPos && sec.offsetTop + sec.offsetHeight > scrollPos) {
